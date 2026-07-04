@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>☀️ 2026 南法盛夏之旅：古羅馬、薰衣草與地中海風情全攻略</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Serif+TC:wght@600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --lavender:#8E7CC3;
+    --lavender-soft:#967BB6;
+    --lavender-deep:#5F4E96;
+    --lavender-mist:#F1EDF9;
+    --ochre:#E5A93C;
+    --ochre-deep:#B97F1D;
+    --ochre-mist:#FBF3E2;
+    --ocean:#2A7B9B;
+    --ocean-deep:#1D5C75;
+    --ocean-mist:#E7F2F6;
+    --ink:#2D2A33;
+    --stone:#6E6878;
+    --bg:#FAFAFA;
+    --danger:#C2402A;
+    --danger-bg:#FDEDE8;
+  }
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:'Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif}
+  .font-display{font-family:'Marcellus','Noto Serif TC',serif}
+  .font-serif-tc{font-family:'Noto Serif TC','Marcellus',serif}
+  .section-anchor{scroll-margin-top:84px}
+  .card{background:#fff;border:1px solid rgba(94,78,150,.10);border-radius:1.25rem;box-shadow:0 10px 30px -18px rgba(95,78,150,.35)}
+  .wiki-link{color:var(--ocean-deep);text-decoration:underline;text-decoration-color:rgba(42,123,155,.35);text-underline-offset:3px;transition:all .18s ease}
+  .wiki-link:hover{color:var(--lavender-deep);text-decoration-color:var(--lavender);background:var(--lavender-mist);border-radius:.2rem}
+  .avatar{width:2.35rem;height:2.35rem;border-radius:9999px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.72rem;font-weight:700;letter-spacing:.05em;border:2px solid #fff;box-shadow:0 3px 8px rgba(45,42,51,.22);flex:none}
+  .avatar-stack .avatar{margin-left:-.55rem}
+  .avatar-stack .avatar:first-child{margin-left:0}
+  .avatar:hover{transform:translateY(-3px);transition:transform .18s ease;z-index:5}
+  .chip{border-radius:9999px;padding:.32rem .85rem;font-size:.8rem;font-weight:600;white-space:nowrap;transition:all .18s ease}
+  .badge-tag{display:inline-flex;align-items:center;gap:.3rem;border-radius:9999px;padding:.18rem .7rem;font-size:.72rem;font-weight:700;letter-spacing:.04em}
+  .timeline-line{position:absolute;left:1.05rem;top:0;bottom:0;width:3px;background:linear-gradient(180deg,var(--lavender) 0%,var(--ochre) 55%,var(--ocean) 100%);border-radius:9999px;opacity:.5}
+  .milestone{position:absolute;left:0;top:1.6rem;width:2.15rem;height:2.15rem;border-radius:9999px;background:linear-gradient(140deg,var(--lavender),var(--lavender-deep));color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Marcellus',serif;font-size:.78rem;box-shadow:0 0 0 5px var(--bg),0 6px 14px rgba(95,78,150,.4)}
+  .collapse-btn{width:100%;display:flex;align-items:center;justify-content:space-between;gap:.75rem;text-align:left;padding:.8rem 1rem;border-radius:.85rem;transition:background .18s ease}
+  .collapse-btn:hover{background:var(--lavender-mist)}
+  .collapse-btn:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--ochre);outline-offset:2px}
+  .chev{transition:transform .22s ease}
+  .chev.open{transform:rotate(180deg)}
+  .fade-in{animation:fadeUp .5s ease both}
+  @keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto}
+    .fade-in{animation:none}
+    .avatar:hover{transform:none}
+    .chev{transition:none}
+  }
+  .hero-sky{background:
+    radial-gradient(1100px 480px at 82% -10%, rgba(229,169,60,.55), transparent 60%),
+    radial-gradient(900px 520px at -10% 20%, rgba(42,123,155,.45), transparent 60%),
+    linear-gradient(160deg,#5F4E96 0%,#8E7CC3 45%,#B49BD6 72%,#E5A93C 130%)}
+  .stone-texture{background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 2px,transparent 2px 26px),repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 2px,transparent 2px 52px)}
+  .check-card input[type=checkbox]{width:1.25rem;height:1.25rem;accent-color:var(--lavender-deep);cursor:pointer}
+  .check-card.done{border-color:rgba(142,124,195,.6);background:var(--lavender-mist)}
+  .scrollbar-none::-webkit-scrollbar{display:none}
+  .scrollbar-none{scrollbar-width:none}
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script>
+
+<script type="text/babel" data-presets="react">
+const {useState, useEffect} = React;
+
+/* ---------------- Icons（內嵌 SVG，Lucide 風格，零外部依賴） ---------------- */
+const Svg = ({children, size=20, className=""}) => (
+  <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor"
+       strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
+    {children}
+  </svg>
+);
+const I = {
+  CreditCard:(p)=>(<Svg {...p}><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></Svg>),
+  Sun:(p)=>(<Svg {...p}><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></Svg>),
+  Footprints:(p)=>(<Svg {...p}><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z"/><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z"/><path d="M16 17h4M4 13h4"/></Svg>),
+  ShieldAlert:(p)=>(<Svg {...p}><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="M12 8v4"/><path d="M12 16h.01"/></Svg>),
+  CheckSquare:(p)=>(<Svg {...p}><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></Svg>),
+  MapPin:(p)=>(<Svg {...p}><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></Svg>),
+  Train:(p)=>(<Svg {...p}><rect x="4" y="3" width="16" height="14" rx="3"/><path d="M4 10h16"/><circle cx="8.5" cy="13.5" r="1"/><circle cx="15.5" cy="13.5" r="1"/><path d="m8 21 2-4M16 21l-2-4"/></Svg>),
+  Bus:(p)=>(<Svg {...p}><path d="M4 5h16a1 1 0 0 1 1 1v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a1 1 0 0 1 1-1Z"/><path d="M3 11h18"/><circle cx="7.5" cy="18" r="1.5"/><circle cx="16.5" cy="18" r="1.5"/></Svg>),
+  Bed:(p)=>(<Svg {...p}><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></Svg>),
+  Landmark:(p)=>(<Svg {...p}><path d="M3 22h18"/><path d="M6 18v-7M10 18v-7M14 18v-7M18 18v-7"/><path d="M12 2 20 7H4Z"/></Svg>),
+  Lightbulb:(p)=>(<Svg {...p}><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/></Svg>),
+  Alert:(p)=>(<Svg {...p}><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></Svg>),
+  Chevron:(p)=>(<Svg {...p}><path d="m6 9 6 6 6-6"/></Svg>),
+  Bag:(p)=>(<Svg {...p}><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></Svg>),
+  Users:(p)=>(<Svg {...p}><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></Svg>),
+  Clock:(p)=>(<Svg {...p}><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></Svg>),
+  Camera:(p)=>(<Svg {...p}><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3Z"/><circle cx="12" cy="13" r="3"/></Svg>),
+  Compass:(p)=>(<Svg {...p}><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76-2.12 6.36-6.36 2.12 2.12-6.36 6.36-2.12Z"/></Svg>),
+};
+
+/* ---------------- 團員資料 ---------------- */
+const MEMBERS = ["文安","思賢","皓哲","子豪","國廷","忻叡","韋菖","政倫"];
+const AVATAR_COLORS = ["#5F4E96","#2A7B9B","#8E7CC3","#1D5C75","#6B5CA5","#33859F","#7E6BB5","#25708C"];
+const memberColor = (name) => AVATAR_COLORS[Math.max(0, MEMBERS.indexOf(name)) % AVATAR_COLORS.length];
+
+const Avatar = ({name}) => (
+  <span className="avatar" style={{background:memberColor(name)}} title={name}>{name}</span>
+);
+const AvatarStack = ({names, label}) => (
+  <div className="flex items-center">
+    {label && <span className="text-xs font-semibold mr-2" style={{color:"var(--stone)"}}>{label}</span>}
+    <div className="flex avatar-stack">{names.map(n => <Avatar key={n} name={n} />)}</div>
+  </div>
+);
+
+const Wiki = ({href, children}) => (
+  <a className="wiki-link" href={href} target="_blank" rel="noopener noreferrer">{children}</a>
+);
+const MapBtn = ({href, children}) => (
+  <a href={href} target="_blank" rel="noopener noreferrer"
+     className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-bold text-white shadow"
+     style={{background:"linear-gradient(135deg,var(--ocean),var(--ocean-deep))"}}>
+    <I.MapPin size={14}/>{children}
+  </a>
+);
+
+/* ---------------- 摺疊區塊 ---------------- */
+const Collapse = ({icon, title, tint="var(--lavender-deep)", defaultOpen=false, children}) => {
+  const [open, setOpen] = useState(defaultOpen);
+  return (
+    <div className="rounded-xl border" style={{borderColor:"rgba(94,78,150,.14)", background:"#fff"}}>
+      <button type="button" className="collapse-btn" onClick={()=>setOpen(o=>!o)} aria-expanded={open}>
+        <span className="flex items-center gap-2 font-bold text-sm" style={{color:tint}}>
+          {icon}{title}
+        </span>
+        <span className={"chev " + (open?"open":"")} style={{color:tint}}><I.Chevron size={18}/></span>
+      </button>
+      {open && <div className="px-4 pb-4 pt-1 text-sm leading-relaxed fade-in" style={{color:"var(--ink)"}}>{children}</div>}
+    </div>
+  );
+};
+
+const NoteBox = ({title, children, danger=false}) => (
+  <div className="rounded-xl p-4 border-l-4"
+       style={danger
+         ? {background:"var(--danger-bg)", borderColor:"var(--danger)"}
+         : {background:"var(--ochre-mist)", borderColor:"var(--ochre)"}}>
+    <div className="flex items-center gap-2 font-bold text-sm mb-1" style={{color: danger ? "var(--danger)" : "var(--ochre-deep)"}}>
+      {danger ? <I.Alert size={17}/> : <I.Lightbulb size={17}/>}{title}
+    </div>
+    <div className="text-sm leading-relaxed" style={{color:"var(--ink)"}}>{children}</div>
+  </div>
+);
+
+/* 每日地標相簿（橫向滑動；Unsplash 失效時自動顯示漸層備援） */
+const Gallery = ({items}) => (
+  <div className="flex gap-3 overflow-x-auto px-5 pt-5 pb-1 scrollbar-none" style={{scrollSnapType:"x mandatory"}}>
+    {items.map((g,i)=>(
+      <a key={i} href={g.page || g.src} target="_blank" rel="noopener noreferrer"
+         className="relative flex-none w-4/5 sm:w-3/5 md:w-1/2 h-44 md:h-52 rounded-xl overflow-hidden shadow block"
+         style={{scrollSnapAlign:"start"}} title={g.cap + "（點擊查看圖片來源）"}>
+        <div className="absolute inset-0 stone-texture"
+             style={{background:"linear-gradient(135deg,var(--lavender) 0%,var(--lavender-soft) 40%,var(--ochre) 100%)"}}/>
+        <img src={g.src} alt={g.cap} loading="lazy"
+             className="absolute inset-0 w-full h-full object-cover"
+             onError={(e)=>{e.currentTarget.style.display="none";}}/>
+        <span className="absolute bottom-0 left-0 right-0 px-3 py-2 text-white text-xs font-bold tracking-wide"
+             style={{background:"linear-gradient(180deg,rgba(45,42,51,0),rgba(45,42,51,.62))"}}>
+          📍 {g.cap}
+        </span>
+      </a>
+    ))}
+    <div className="flex-none w-1" aria-hidden="true"></div>
+  </div>
+);
+
+/* ---------------- Section 1：行前裝備（可勾選 + 記憶） ---------------- */
+const PACKING = [
+  {icon:<I.CreditCard size={22}/>, tint:"var(--ochre-deep)", bg:"var(--ochre-mist)", title:"必備證件與財物",
+   body:<>護照、個人藥品、信用卡。每人請務必自備至少<b>現金 300 歐元</b>用於支付包車車資，並多抓 10–20 歐元預備住宿稅、公車與市集消費。</>},
+  {icon:<I.Sun size={22}/>, tint:"var(--ochre-deep)", bg:"var(--ochre-mist)", title:"盛夏防曬與防中暑",
+   body:<>7 月南法高溫達 <b>32°C～35°C</b>，日照長達 14 小時，紫外線極強。請備妥高係數防曬乳、抗 UV 太陽眼鏡、寬邊遮陽帽及保溫水瓶（路邊有 “Eau potable” 可飲用泉水）。</>},
+  {icon:<I.Footprints size={22}/>, tint:"var(--lavender-deep)", bg:"var(--lavender-mist)", title:"安全第一鞋履",
+   body:<>亞爾等古城皆為中世紀鵝卵石路或陡峭石階。更重要的是，薰衣草田（7/15、7/17）蜜蜂極多，<b>嚴禁穿拖鞋或涼鞋</b>，請務必穿著「包頭運動鞋或布鞋」以防 🐝 螫傷。</>},
+  {icon:<I.ShieldAlert size={22}/>, tint:"var(--danger)", bg:"var(--danger-bg)", title:"最高治安警戒",
+   body:<>馬賽與亞維儂藝術節期間人潮極多。<b>防盜包一律往前背，手機絕不放桌上</b>，拒絕任何街頭強塞幸運繩、假簽名連署。包車時貴重物品切勿放在車窗看得到的地方，防範破窗。</>},
+  {icon:<I.CheckSquare size={22}/>, tint:"var(--ocean-deep)", bg:"var(--ocean-mist)", title:"環保自備用品",
+   body:<>亞爾 B&B 附吹風機與浴缸（想泡澡可自備用品）。法國響應環保，<b>不提供一次性牙刷、牙膏、刮鬍刀與室內拖鞋</b>，請務必自備。</>},
+];
+
+const PackingSection = () => {
+  const KEY = "sf2026-packing";
+  const [checked, setChecked] = useState(()=>{
+    try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch(e){ return {}; }
+  });
+  const toggle = (i) => {
+    const next = {...checked, [i]: !checked[i]};
+    setChecked(next);
+    try { localStorage.setItem(KEY, JSON.stringify(next)); } catch(e){}
+  };
+  const done = PACKING.filter((_,i)=>checked[i]).length;
+  return (
+    <section id="packing" className="section-anchor">
+      <SectionTitle icon={<I.CheckSquare size={20}/>} eyebrow="SECTION 1 · ESSENTIALS"
+        title="核心裝備與生活叮嚀" sub={`勾選檢查你的行前準備（${done}/${PACKING.length} 已完成，勾選狀態會自動記住）`}/>
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+        {PACKING.map((p,i)=>(
+          <label key={i} className={"card check-card p-5 flex flex-col gap-3 cursor-pointer " + (checked[i]?"done":"")}>
+            <div className="flex items-start justify-between gap-3">
+              <span className="w-11 h-11 rounded-xl flex items-center justify-center" style={{background:p.bg, color:p.tint}}>{p.icon}</span>
+              <input type="checkbox" checked={!!checked[i]} onChange={()=>toggle(i)} aria-label={"完成：" + p.title}/>
+            </div>
+            <div>
+              <div className="font-bold mb-1 font-serif-tc" style={{color:p.tint}}>{p.title}</div>
+              <p className="text-sm leading-relaxed" style={{color:"var(--ink)"}}>{p.body}</p>
+            </div>
+          </label>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+/* ---------------- 每日行程資料 ---------------- */
+const ALL8 = MEMBERS;
+const DAYS = [
+  {
+    id:"d0711", date:"7/11", wd:"六", num:"0", tag:"團隊前哨站", title:"先鋒抵達・時差調整",
+    img:null,
+    gallery:[
+      {src:"https://commons.wikimedia.org/wiki/Special:FilePath/Lavender%20Field%20Provence%20France%20021.JPG?width=900", page:"https://commons.wikimedia.org/wiki/File:Lavender%20Field%20Provence%20France%20021.JPG", cap:"普羅旺斯薰衣草田・旅程序曲"},
+      {src:"https://commons.wikimedia.org/wiki/Special:FilePath/Panorama%20autour%20de%20Gordes.jpg?width=900", page:"https://commons.wikimedia.org/wiki/File:Panorama%20autour%20de%20Gordes.jpg", cap:"普羅旺斯田園風光"},
+    ],
+    attendees:<AvatarStack names={["思賢","皓哲","子豪"]}/>,
+    body:(
+      <p className="text-sm leading-relaxed"><b>【團隊狀況】</b>思賢已在法國；皓哲與子豪於今日抵達，率先調整時差並自由活動，為明日全員大集合熱身。</p>
+    ),
+  },
+  {
+    id:"d0712", date:"7/12", wd:"日", num:"I", tag:"第一天", title:"里昂集合日（美食與世界遺產之都）",
+    img:null,
+    gallery:[
+      {src:"https://commons.wikimedia.org/wiki/Special:FilePath/Lyon%20Cath%C3%A9drale%20Saint-Jean-Baptiste%20Basilique%20Notre%20Dame%20de%20Fourvi%C3%A8re.jpg?width=900", page:"https://commons.wikimedia.org/wiki/File:Lyon%20Cath%C3%A9drale%20Saint-Jean-Baptiste%20Basilique%20Notre%20Dame%20de%20Fourvi%C3%A8re.jpg", cap:"富維耶聖母院與里昂舊城"},
+      {src:"https://commons.wikimedia.org/wiki/Special:FilePath/Lyon%20widok%20przez%20Rodan.jpg?width=900", page:"https://commons.wikimedia.org/wiki/File:Lyon%20widok%20przez%20Rodan.jpg", cap:"隆河畔的里昂"},
+    ],
+    attendees:(
+      <div className="flex flex-col items-end gap-1">
+        <div className="flex items-center gap-2">
+          <span className="text-xs font-semibold" style={{color:"var(--stone)"}}>中午</span><Avatar name="忻叡"/>
+          <span className="text-xs font-semibold" style={{color:"var(--stone)"}}>15:00</span><Avatar name="國廷"/>
+        </div>
+        <AvatarStack label="19:15 全員到齊" names={ALL8}/>
+      </div>
+    ),
+    transport:[<><b>12:52 – 14:56</b>　iNOUI 6685（Paris Gare de Lyon → Lyon Part Dieu）</>],
+    body:(
+      <p className="text-sm leading-relaxed"><b>【團隊動態】</b>「韋菖、文安、政倫（歐錢組）」進行里昂一日遊；忻叡中午抵達；國廷 15:00 抵達；16:00 後可入住飯店；<b>19:15 全員集合晚餐</b>。</p>
+    ),
+    hotel:{
+      name:"Bikube Lyon",
+      map:"https://www.google.com/maps/search/?api=1&query=Bikube%20Lyon%209%20Rue%20Saint-Th%C3%A9odore%2069003%20Lyon%20France",
+      lines:[
+        <>飯店地址：9 Rue Saint-Théodore, Lyon, 69003, France／電話：0033-4-51420454</>,
+        <>入住退房：<b>Jul 12, 2026 4:00 PM 後入住</b>／<b>Jul 13, 2026 11:00 AM 前退房</b></>,
+        <>房間細節：共 3 間獨立 Studio（包含 Classic 與 Deluxe Studio，每房限住 2 人，皆為 1 張雙人床 Queen bed／不含早餐，有吹風機、毛巾）</>,
+        <>到店付款：每房需另付現場稅費約 <b>€17.16</b></>,
+      ],
+    },
+    history:(
+      <p><Wiki href="https://zh.wikipedia.org/wiki/里昂">里昂</Wiki>歷史超過兩千年，西元前 43 年由羅馬人建立，曾為古羅馬高盧地區首都。中世紀與文藝復興時期，因絲綢貿易而極度繁榮。1998 年其歷史城區被列入<Wiki href="https://zh.wikipedia.org/wiki/世界遗产">世界文化遺產</Wiki>，並享有「法國美食之都」美譽。</p>
+    ),
+    spots:[
+      {t:<Wiki href="https://zh.wikipedia.org/wiki/富维耶圣母院">富維耶聖母院</Wiki>, d:<>各位，這座教堂是里昂人跟聖母「還願」的成果：1870 年普魯士大軍壓境，主教發誓只要里昂平安就蓋教堂，結果真的沒事，只好乖乖動工。不過里昂人嘴很壞，嫌它四座塔像四隻腳朝天，暱稱它「倒立的大象」🐘。別管大象了，上來就對了——這裡是眺望兩河交匯的最佳看台，天氣好還能遠眺白朗峰。</>},
+      {t:<><Wiki href="https://zh.wikipedia.org/wiki/里昂老城">里昂舊城區</Wiki>與串廊（Traboules）</>, d:<>走進舊城請跟緊我，這裡的「串廊」根本是合法穿牆術：推開一扇不起眼的門，就能從這條街穿過人家中庭走到下條街。當年絲綢工人靠它運貨不淋雨，二戰時<Wiki href="https://zh.wikipedia.org/wiki/法国抵抗运动">抵抗軍</Wiki>靠它甩掉蓋世太保。里昂是「法國美食之都」，晚餐試試傳統小酒館 Bouchon 的里昂魚糕（Quenelle）；當地人常說：「里昂有三條河：隆河、索恩河，和薄酒萊。」🍷</>},
+    ],
+  },
+  {
+    id:"d0713", date:"7/13", wd:"一", num:"II", tag:"第二天", title:"里昂 → 尼姆 → 亞爾（走入古羅馬與梵谷的畫作）",
+    img:null,
+    gallery:[
+      {src:"https://commons.wikimedia.org/wiki/Special:FilePath/La%20Maison%20carr%C3%A9e.JPG?width=900", page:"https://commons.wikimedia.org/wiki/File:La%20Maison%20carr%C3%A9e.JPG", cap:"尼姆方形神殿 Maison Carrée"},
+      {src:"https://commons.wikimedia.org/wiki/Special:FilePath/Arles%20-%202017-05-24%20-%20Roman%20Amphitheatre%20-%203804.jpg?width=900", page:"https://commons.wikimedia.org/wiki/File:Arles%20-%202017-05-24%20-%20Roman%20Amphitheatre%20-%203804.jpg", cap:"亞爾競技場（Commons 精選攝影）"},
+    ],
+    attendees:<AvatarStack label="全員 8 人" names={ALL8}/>,
+    transport:[
+      <><b>10:11 – 11:33</b>　iNOUI 6823（Lyon Part Dieu → Nîmes Centre）</>,
+      <><b>13:26 – 13:50</b>　INTERCITÉS 4657（Nîmes Centre → Arles）</>,
+    ],
+    hotel:{
+      name:"阿爾勒的房源（房東：Bérengère & Thibaut）｜7/13–7/16 共住 3 晚",
+      map:"https://maps.app.goo.gl/peCSEwqiKHFK34ov8",
+      lines:[
+        <>住宿地址：36 Rue des Arènes, 13200 Arles, France／確認碼：<b>HMKX8C2DPS</b></>,
+        <>預訂詳情：同伴共 8 人包棟／3 間房住宿 3 晚（總計金額 <b>€1,637</b>，飯店住宿稅另計）</>,
+        <>房屋備品：附吹風機、浴缸（想泡澡的團員可自備泡澡用品喔！）</>,
+      ],
+    },
+    history:(
+      <p><Wiki href="https://zh.wikipedia.org/wiki/尼姆">尼姆</Wiki>保留了全法國最完整的羅馬遺跡，素有「法國的羅馬」之稱。<Wiki href="https://zh.wikipedia.org/wiki/阿尔勒">亞爾</Wiki>則是西元前 46 年由凱撒大帝建立的軍事重鎮，其羅馬與羅曼式古蹟群同為世界遺產；近代則因畫家<Wiki href="https://zh.wikipedia.org/wiki/文森特·梵高">文森・梵谷</Wiki>於 1888–1889 年在此瘋狂創作 15 個月、留下多幅不朽名作而聞名。</p>
+    ),
+    spots:[
+      {t:<Wiki href="https://zh.wikipedia.org/wiki/方形神殿">尼姆方形神殿</Wiki>, d:<>兩千年了，它還挺立在市中心，保存好到像昨天才完工，連美國總統傑佛遜都是它的鐵粉，直接「參考」它蓋了維吉尼亞州議會大廈。小知識：尼姆的市徽是一隻拴著棕櫚樹的鱷魚，紀念奧古斯都平定埃及——對，你牛仔褲上的丹寧布（Denim）原意就是「de Nîmes（來自尼姆）」，這座羅馬古城才是牛仔褲的娘家！👖</>},
+      {t:<Wiki href="https://zh.wikipedia.org/wiki/阿尔勒竞技场">亞爾競技場</Wiki>, d:<>西元 90 年完工，兩萬人的吼聲曾在 120 座拱門間迴盪。最妙的是中世紀它整個被「違建」占領——城牆裡塞了兩百多戶民宅加兩座教堂，活生生把競技場住成了社區，直到 19 世紀才拆遷清空。今天它還在營業，夏天辦音樂會、辦普羅旺斯式趕牛賽（不傷牛的那種），兩千歲高齡依然是全亞爾最忙的場地。</>},
+      {t:<Wiki href="https://zh.wikipedia.org/wiki/圣托菲姆教堂">聖托菲姆教堂</Wiki>, d:<>門面上那幅《末日審判》石雕請抬頭慢慢看：右邊上天堂的表情安詳，左邊下地獄的被鐵鏈串成一排，中世紀石匠的「勸世圖」比恐怖片有效。這裡來頭不小——1178 年神聖羅馬帝國皇帝「紅鬍子」腓特烈一世專程來此加冕，等於中世紀的世紀大典禮堂。</>},
+      {t:<>論壇廣場與梵谷咖啡館</>, d:<>1888 年 9 月的某個夜晚，<Wiki href="https://zh.wikipedia.org/wiki/文森特·梵高">梵谷</Wiki>就坐在這廣場上，畫下《夜間露天咖啡座》。他在信裡跟妹妹炫耀：「我畫夜晚完全不用黑色！」今天咖啡館外牆還漆成畫裡那種鵝黃色。導遊真心話：這裡拍照打卡就好，餐點是觀光價 😉 梵谷在亞爾 15 個月畫了 200 多幅畫，藝術家的產能非常驚人。</>},
+    ],
+  },
+  {
+    id:"d0714", date:"7/14", wd:"二", num:"III", tag:"第三天・包車日 €700", title:"亞爾 → 韋松拉羅曼 → 奧朗日 → 亞爾",
+    img:null,
+    gallery:[
+      {src:"https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20Vaison%20la%20Romaine.jpg?width=900", page:"https://commons.wikimedia.org/wiki/File:Pont%20Vaison%20la%20Romaine.jpg", cap:"韋松拉羅曼・兩千年羅馬古橋"},
+      {src:"https://commons.wikimedia.org/wiki/Special:FilePath/Ancient%20Theatre%20of%20Orange%20(14828183905).jpg?width=900", page:"https://commons.wikimedia.org/wiki/File:Ancient%20Theatre%20of%20Orange%20(14828183905).jpg", cap:"奧朗日古羅馬劇場"},
+    ],
+    attendees:<AvatarStack label="全員 8 人" names={ALL8}/>,
+    body:(
+      <p className="text-sm leading-relaxed"><b>【今日行程】</b>上午包車前往韋松拉羅曼自由行半天多，下午前往奧朗日參觀古羅馬劇場，傍晚返回亞爾 B&B。</p>
+    ),
+    history:(
+      <p><Wiki href="https://zh.wikipedia.org/wiki/韦松拉罗曼">韋松拉羅曼</Wiki>擁有法國境內最大的古羅馬貴族住宅考古遺址，中世紀時居民遷至山丘築城，形成「左手羅馬、右手中世紀」的奇特景觀。<Wiki href="https://zh.wikipedia.org/wiki/奥朗日">奧朗日</Wiki>則是凱撒大帝時期的退役老兵殖民地，為羅馬文化向外傳播的重要據點。</p>
+    ),
+    spots:[
+      {t:<><Wiki href="https://zh.wikipedia.org/wiki/韦松拉罗曼">韋松拉羅曼</Wiki>與週二市集</>, d:<>這村子是「一村兩世界」：河這岸是羅馬富豪的豪宅遺址（全法國最大），河那岸山丘上是中世紀高城。連接兩岸的單拱羅馬古橋已經上工兩千年，1992 年世紀洪水沖垮了現代橋，它老人家卻毫髮無傷——羅馬工程，永久保固。今天週二正逢大市集，記得帶現金掃貨：普羅旺斯香料、蜂蜜、橄欖、印花布，全是伴手禮精華！🧺</>},
+      {t:<Wiki href="https://zh.wikipedia.org/wiki/奥朗日古罗马剧场">奧朗日古羅馬劇場</Wiki>, d:<>那面高 37 公尺的舞台牆，連太陽王路易十四看了都說：「這是我王國中最美的一面牆。」西元 391 年教會嫌戲劇傷風敗俗把劇場關了，一關就是一千多年；如今每年夏天歌劇節在此開唱，不插電都能傳到最後一排——羅馬人的音響工程，至今沒人敢說超越。牆上那尊奧古斯都雕像會一直盯著你看，別緊張，他盯了兩千年了。</>},
+    ],
+    notes:[
+      {title:"🕘 市集黃金時段", body:<>韋松拉羅曼的傳統大市集精華期在<b>【早上 9:00 至中午 12:00】</b>，12:30 後農夫就會陸續收攤。今天包車出發時間務必「愈早愈好」（<b>建議 9:30 前抵達</b>），才能體驗到最熱鬧的普羅旺斯市集靈魂！</>},
+    ],
+  },
+  {
+    id:"d0715", date:"7/15", wd:"三", num:"IV", tag:"第四天・包車日 €700・老人旅行團模式", title:"普羅旺斯經典山城與花海",
+    img:null,
+    gallery:[
+      {src:"https://commons.wikimedia.org/wiki/Special:FilePath/Abbaye%20de%20senanque%20lavande.jpg?width=900", page:"https://commons.wikimedia.org/wiki/File:Abbaye%20de%20senanque%20lavande.jpg", cap:"塞南克修道院與薰衣草田"},
+      {src:"https://commons.wikimedia.org/wiki/Special:FilePath/Gordes%20Vaucluse%20France%20Luc%20Viatour.JPG?width=900", page:"https://commons.wikimedia.org/wiki/File:Gordes%20Vaucluse%20France%20Luc%20Viatour.JPG", cap:"石頭城・勾禾德"},
+      {src:"https://commons.wikimedia.org/wiki/Special:FilePath/Fontaine%20de%20Vaucluse%20-%20r%C3%A9surgence.jpg?width=900", page:"https://commons.wikimedia.org/wiki/File:Fontaine%20de%20Vaucluse%20-%20r%C3%A9surgence.jpg", cap:"碧泉村・地下湧泉源頭"},
+    ],
+    attendees:<AvatarStack label="全員 8 人" names={ALL8}/>,
+    body:(
+      <div className="space-y-2 text-sm leading-relaxed">
+        <p><b>【今日行程】</b>亞爾 → 索村 → 蒙布蘭 → 勾禾德（塞南克修道院） → 碧泉村 → 返回亞爾 B&B。</p>
+        <p className="flex items-start gap-2"><span className="mt-0.5" style={{color:"var(--lavender-deep)"}}><I.Camera size={16}/></span><span><b>【穿搭指南】</b>建議穿著黃色、白色或淺藍色亮色系衣服，在紫色花海與黃褐色石牆前拍照效果極佳。</span></p>
+      </div>
+    ),
+    history:(
+      <p>本日進入<Wiki href="https://zh.wikipedia.org/wiki/吕贝隆">呂貝隆</Wiki>山區。中世紀時因常遭海盜與強盜襲擊，居民紛紛在險峻的孤山峭壁上築城防禦，形成了普羅旺斯獨特的「山城（Village perché）」文化。</p>
+    ),
+    spots:[
+      {t:<Wiki href="https://zh.wikipedia.org/wiki/索村_(沃克吕兹省)">索村</Wiki>, d:<>行家看門道：瓦朗索爾種的多是產量高的「醒目薰衣草」，而索村這片海拔 800 公尺的高原，種的才是香水級的「真薰衣草」——法國人叫它 lavande fine，「細緻的薰衣草」。要買精油認明 AOP 產地認證，這裡買最正宗。索村的薰衣草蜂蜜和小牛軋糖也是一絕；蜜蜂很多，所以再提醒一次：包鞋！🐝</>},
+      {t:<>馮度山麓<Wiki href="https://zh.wikipedia.org/wiki/冯度山麓蒙布兰">蒙布蘭</Wiki></>, d:<>「法國最美村莊」認證班底，整村金色石屋貼著山壁層層疊上去，遠看像一幅浮雕。羅馬人早就發現這裡的硫磺溫泉，來此泡湯養生。村子小小的，適合慢慢晃：一條石板路、幾間工作坊、一杯咖啡，這就是普羅旺斯人說的「慢活的藝術」。</>},
+      {t:<Wiki href="https://zh.wikipedia.org/wiki/戈尔德">勾禾德</Wiki>, d:<>「石頭城」不是綽號是實況：全鎮石灰岩乾砌，從山腳疊到山頂城堡，像一頂戴在呂貝隆山區的王冠。二戰時全村掩護抵抗軍，戰後獲頒十字勳章，是有勳章的村子！夏卡爾、瓦沙雷利這些藝術家都曾搬來住——藝術家挑住處的眼光，各位可以放心參考。</>},
+      {t:<Wiki href="https://zh.wikipedia.org/wiki/塞南克修道院">塞南克修道院</Wiki>, d:<>1148 年至今，修士們仍在裡面過著「祈禱＋種田」的日子，而他們的「田」就是門前那片全南法最會拍照的薰衣草田。重點提醒：這裡是清修之地，修士就住在裡面，拍照時請壓低音量；想帶走紀念品，修道院商店賣修士親製的薰衣草精油和蜂蜜，買了等於贊助他們繼續種花，功德無量。🙏</>},
+      {t:<Wiki href="https://zh.wikipedia.org/wiki/沃克吕兹泉村">碧泉村</Wiki>, d:<>這口泉深不見底——探測器下去 300 多公尺還沒到底，連庫斯托船長的潛水團隊都鎩羽而歸。「沃克呂茲省」的名字就是從這裡的「封閉山谷」來的，可以說整個省都跟著它姓。14 世紀大詩人佩脫拉克在此隱居 16 年，寫詩思念女神蘿拉——單戀寫成傳世經典，失戀的朋友請參考這個轉念方式。溪水終年 13°C，手伸進去 3 秒就知道什麼叫透心涼。💦</>},
+    ],
+    notes:[
+      {title:"⛰️ 車上隱形殺手", body:<>連續彎路與上下坡的丘陵地形。長途坐車極易暈車，容易不適的團員<b>「出發前 30 分鐘先吃好暈車藥」</b>。</>},
+      {title:"❄️ 極端車內外溫差", body:<>7 月車外烈日爆熱（常破 35°C），但包車冷氣通常開極強。車上務必隨身攜帶薄襯衫或抗 UV 罩衫以便穿脫。</>},
+      {title:"🕒 花海黃金拍照期", body:<>建議將最核心的塞南克修道院花海排在<b>「下午 4:00 之後」</b>，這時的黃金順光拍出來的紫色波浪最夢幻柔和。</>},
+    ],
+  },
+  {
+    id:"d0716", date:"7/16", wd:"四", num:"V", tag:"第五天", title:"萊博光之採石場 → 亞維儂自由行（藝術與教宗的輝煌）",
+    img:null,
+    gallery:[
+      {src:"https://commons.wikimedia.org/wiki/Special:FilePath/Carri%C3%A8res%20de%20Lumi%C3%A8res%20Les%20Baux%20de%20Provence.JPG?width=900", page:"https://commons.wikimedia.org/wiki/File:Carri%C3%A8res%20de%20Lumi%C3%A8res%20Les%20Baux%20de%20Provence.JPG", cap:"萊博・光之採石場"},
+      {src:"https://commons.wikimedia.org/wiki/Special:FilePath/Panorama%20Baux%20De%20Provence%20(228625629).jpeg?width=900", page:"https://commons.wikimedia.org/wiki/File:Panorama%20Baux%20De%20Provence%20(228625629).jpeg", cap:"巨石山脊上的萊博"},
+      {src:"https://commons.wikimedia.org/wiki/Special:FilePath/Avignon%20-%20Palais%20des%20Papes1.jpg?width=900", page:"https://commons.wikimedia.org/wiki/File:Avignon%20-%20Palais%20des%20Papes1.jpg", cap:"亞維儂教宗宮"},
+    ],
+    attendees:<AvatarStack label="全員 8 人" names={ALL8}/>,
+    transport:[
+      <>搭乘 <b>ZOU! 707 公車</b>（車資約 €10／人）</>,
+      <>去程 <b>08:10 – 08:48</b>（亞爾 → 萊博）／下午 <b>13:03 – 14:00</b>（萊博 → 亞維儂）</>,
+    ],
+    deadline:(
+      <div className="rounded-xl p-4 border-2" style={{background:"var(--danger-bg)", borderColor:"var(--danger)"}}>
+        <div className="flex items-center gap-2 font-bold mb-1" style={{color:"var(--danger)"}}>
+          <I.Alert size={20}/>⚠️ 生死集合線
+        </div>
+        <p className="text-sm leading-relaxed" style={{color:"var(--ink)"}}>
+          <b style={{color:"var(--danger)"}}>19:50 必須在亞維儂火車站月台集合</b>，搭乘 <b>TER 17705（19:51 發車）</b>返回亞爾（20:07 抵達）。
+          <i>車票已訂好，跑錯沒人可求情！</i>發車前僅 1 分鐘緩衝，請依下方藝術節提醒<b>提早 30–40 分鐘抵達車站</b>。
+        </p>
+      </div>
+    ),
+    body:(
+      <div className="text-sm leading-relaxed space-y-1">
+        <p><b>【行程分流方案】</b>本日最終目的地皆為亞維儂，但日間可分流：</p>
+        <p>・方案 A（公車組）：前往萊博看特展。</p>
+        <p>・方案 B（火車直達組）：不看展者，直接從亞爾搭火車提早前往亞維儂歷史中心自由行。</p>
+      </div>
+    ),
+    history:(
+      <p><Wiki href="https://zh.wikipedia.org/wiki/普罗旺斯地区莱博">普羅旺斯地區萊博</Wiki>位於險峻巨石山脊上，中世紀防禦城堡牢不可破，19 世紀在此發現煉鋁原料而命名為「<Wiki href="https://zh.wikipedia.org/wiki/铝土矿">鋁土礦</Wiki>（Bauxite）」。<Wiki href="https://zh.wikipedia.org/wiki/阿维尼翁">亞維儂</Wiki>於 14 世紀因羅馬動盪，法籍教宗將聖座遷至此地（歷史稱「<Wiki href="https://zh.wikipedia.org/wiki/阿維尼翁教廷">阿維尼翁教廷</Wiki>」），連續七任教宗在此將其打造為當時歐洲的基督教中心。</p>
+    ),
+    spots:[
+      {t:<><Wiki href="https://zh.wikipedia.org/wiki/普罗旺斯地区莱博">普羅旺斯地區萊博</Wiki>與光之採石場</>, d:<>中世紀萊博領主自稱「普羅旺斯之鷹」，家徽還硬說自己是伯利恆之星東方三博士的後代，中世紀的家族行銷做得比誰都狠。1821 年地質學家在此發現煉鋁礦石，直接用村名命名「<Wiki href="https://zh.wikipedia.org/wiki/铝土矿">鋁土礦</Wiki>（Bauxite）」——你手上的鋁罐都跟這村子沾親帶故。村旁採石場廢棄後被藝術家看上，如今是沉浸式光影館「光之採石場」，今年主題《<Wiki href="https://zh.wikipedia.org/wiki/巴勃羅·畢卡索">畢卡索</Wiki>＋<Wiki href="https://zh.wikipedia.org/wiki/弗里达·卡洛">芙烈達・卡蘿</Wiki>》，走進去等於走進畫裡。</>},
+      {t:<Wiki href="https://zh.wikipedia.org/wiki/阿维尼翁教宗宫">亞維儂教宗宮</Wiki>, d:<>14 世紀教宗嫌羅馬太亂，整個教廷搬來亞維儂辦公 70 年，史稱「<Wiki href="https://zh.wikipedia.org/wiki/阿維尼翁教廷">阿維尼翁教廷</Wiki>」，七任教宗接力把這裡蓋成歐洲最大的哥德式宮殿。外表是軍事要塞（教宗也怕被搶），裡面卻曾經溼壁畫滿牆、宴會夜夜笙歌。法國人有句老話虧這段歷史：「教宗在亞維儂，上帝在羅馬。」順帶一提，附近的「教皇新堡（Châteauneuf-du-Pape）」紅酒就是當年教宗的私房酒莊，愛酒的團員筆記。🍷</>},
+      {t:<><Wiki href="https://zh.wikipedia.org/wiki/圣贝内泽桥">聖貝內澤橋</Wiki>（亞維儂斷橋）</>, d:<>傳說牧童貝內澤宣稱神叫他建橋，全城都笑他，直到他單手搬起巨石，眾人立刻閉嘴掏錢。22 拱石橋屢遭<Wiki href="https://zh.wikipedia.org/wiki/罗讷河">隆河</Wiki>洪水沖毀，修橋修到破產，17 世紀官方宣布：不修了。於是留下這座伸向河心的「斷橋」。法國兒歌《在亞維儂橋上》人人會唱，等等上橋，我們也來轉一圈——Sur le pont d'Avignon～ 💃</>},
+    ],
+    notes:[
+      {title:"🎭 亞維儂藝術節人潮警報", body:<>7 月正逢全歐最瘋狂的【<Wiki href="https://zh.wikipedia.org/wiki/阿维尼翁节">阿維尼翁節</Wiki>（亞維儂藝術節）】，全城湧入數十萬遊客。亞維儂中心火車站的人潮會像跨年夜一樣擠爆。購買車票、進剪票口、甚至是走向月台的地下道都會嚴重塞車。請自由行組務必<b>「提早 30–40 分鐘抵達車站卡位」</b>！</>},
+    ],
+  },
+  {
+    id:"d0717", date:"7/17", wd:"五", num:"VI", tag:"第六天・包車日 €730+€530・老人旅行團模式", title:"亞爾 → 艾克斯 → 瓦朗索爾 → 馬賽",
+    img:null,
+    gallery:[
+      {src:"https://commons.wikimedia.org/wiki/Special:FilePath/Fontaine%20de%20la%20Rotonde%201.jpg?width=900", page:"https://commons.wikimedia.org/wiki/File:Fontaine%20de%20la%20Rotonde%201.jpg", cap:"艾克斯・圓形大噴泉"},
+      {src:"https://commons.wikimedia.org/wiki/Special:FilePath/Plateau%20de%20valensole1.JPG?width=900", page:"https://commons.wikimedia.org/wiki/File:Plateau%20de%20valensole1.JPG", cap:"瓦朗索爾薰衣草高原"},
+    ],
+    attendees:<AvatarStack label="全員 8 人" names={ALL8}/>,
+    body:(
+      <p className="text-sm leading-relaxed"><b>【今日行程】</b>亞爾包車退房並出發 → 艾克斯噴泉巡禮 → 瓦朗索爾無邊際薰衣草海 → 抵達馬賽飯店辦理入住。</p>
+    ),
+    hotel:{
+      name:"ibis budget Marseille Centre La Timone",
+      map:"https://maps.app.goo.gl/GuJE5doCZftRZSzD7",
+      lines:[
+        <>飯店地址：63 Boulevard Sakakini, 13005 Marseille, France</>,
+        <>預訂詳情：共 4 間房入住 2 晚（總價約合 <b>RMB 5,525</b>）</>,
+      ],
+    },
+    history:(
+      <p><Wiki href="https://zh.wikipedia.org/wiki/普罗旺斯地区艾克斯">普羅旺斯地區艾克斯</Wiki>為普羅旺斯伯國歷史首府，因地下豐富泉水而繁榮，亦是現代藝術之父<Wiki href="https://zh.wikipedia.org/wiki/保罗·塞尚">保羅・塞尚</Wiki>的故鄉。<Wiki href="https://zh.wikipedia.org/wiki/瓦朗索尔">瓦朗索爾</Wiki>則擁有全南法面積最大、最一望無際的薰衣草栽種高原。</p>
+    ),
+    spots:[
+      {t:<><Wiki href="https://zh.wikipedia.org/wiki/米拉波大道">米拉波大道</Wiki>與圓形大噴泉</>, d:<>艾克斯人自豪地說自己是「千泉之城」，這條 1649 年開闢的林蔭大道就是它的客廳：一側是貴族府邸，一側是咖啡館，<Wiki href="https://zh.wikipedia.org/wiki/保罗·塞尚">塞尚</Wiki>當年天天在此喝咖啡跟左拉抬槓。路上那座長滿青苔的「暖水噴泉」終年湧出 34°C 溫泉，冬天還會冒煙。伴手禮重點：艾克斯特產「可利頌糖（Calisson）」，杏仁甜瓜做的菱形小點，據說 15 世紀國王婚宴上逗笑了不苟言笑的王后——甜到王后都微笑的糖，買就對了。🍬</>},
+      {t:<><Wiki href="https://zh.wikipedia.org/wiki/瓦朗索尔">瓦朗索爾</Wiki>薰衣草高原</>, d:<>地名意思是「陽光之谷」，800 平方公里的高原種滿薰衣草，7 月站在田邊，紫色一路鋪到地平線，隨便拍都是明信片。在地人說：「在瓦朗索爾，連風都是香的。」除了薰衣草，這裡也是杏仁重鎮——薰衣草蜂蜜配杏仁，就是普羅旺斯甜點的靈魂雙主角。提醒：田是農家的生財工具，拍照走田埂、別踩花，蜜蜂同事們正在上班。🐝</>},
+    ],
+    notes:[
+      {title:"🦹 全團行李最高防禦", body:<>今天是包車最後一天，<b>全團行李都在車上</b>。馬賽與周邊公路休息站是砸車熱點。只要全體下車拍照或上廁所（即便只離開 3 分鐘），「任何隨身包、提袋都絕對不能遺留在座位上」。必須請司機將行李全部收入死角行李廂並確認鎖死，防範破窗搶奪！</>},
+    ],
+  },
+  {
+    id:"d0718", date:"7/18", wd:"六", num:"VII", tag:"第七天", title:"馬賽自由行 ＆ 卡西斯地中海峽灣",
+    img:null,
+    gallery:[
+      {src:"https://commons.wikimedia.org/wiki/Special:FilePath/Marseille%20Basilique%20Notre-Dame-de-la-Garde%20Vue%20sur%20le%20Vieux-Port%203.jpg?width=900", page:"https://commons.wikimedia.org/wiki/File:Marseille%20Basilique%20Notre-Dame-de-la-Garde%20Vue%20sur%20le%20Vieux-Port%203.jpg", cap:"從守護聖母聖殿俯瞰馬賽舊港"},
+      {src:"https://commons.wikimedia.org/wiki/Special:FilePath/1027%20Basilique%20Notre-Dame-de-la-Garde%20in%20Marseille%20at%20sunset%20Photo%20by%20Giles%20Laurent.jpg?width=900", page:"https://commons.wikimedia.org/wiki/File:1027%20Basilique%20Notre-Dame-de-la-Garde%20in%20Marseille%20at%20sunset%20Photo%20by%20Giles%20Laurent.jpg", cap:"守護聖母聖殿・夕照"},
+      {src:"https://commons.wikimedia.org/wiki/Special:FilePath/Calanque%20d%27En%20Vau-Cassis.jpg?width=900", page:"https://commons.wikimedia.org/wiki/File:Calanque%20d%27En%20Vau-Cassis.jpg", cap:"卡西斯 En-Vau 峽灣"},
+    ],
+    attendees:<AvatarStack label="全員 8 人" names={ALL8}/>,
+    body:(
+      <div className="text-sm leading-relaxed space-y-2">
+        <p><b>【今日行程】</b>全日馬賽自由行（目前無固定行程，晚上可自由討論是否全員一起吃馬賽魚湯晚餐）。</p>
+        <p className="flex items-start gap-2"><span className="mt-0.5" style={{color:"var(--ocean-deep)"}}><I.Compass size={16}/></span><span><b>【自由活動提案】</b>推薦下午可一同預訂「蔚藍海岸 Cassis：Calanques 峽灣遊船半日遊」。</span></p>
+      </div>
+    ),
+    history:(
+      <p><Wiki href="https://zh.wikipedia.org/wiki/马赛">馬賽</Wiki>由希臘人於西元前 600 年建立，是法國歷史最悠久的城市與地中海第一大港，<Wiki href="https://zh.wikipedia.org/wiki/法国国歌">法國國歌</Wiki>《<Wiki href="https://zh.wikipedia.org/wiki/马赛曲">馬賽曲</Wiki>》亦得名於此。<Wiki href="https://zh.wikipedia.org/wiki/卡西斯">卡西斯</Wiki>則是古老漁村，以周邊鬼斧神工的石灰岩峽灣地形著稱。</p>
+    ),
+    spots:[
+      {t:<Wiki href="https://zh.wikipedia.org/wiki/马赛旧港">馬賽舊港</Wiki>, d:<>西元前 600 年希臘人在此登陸建城，比巴黎的歷史還老好幾百年，馬賽人到現在講起這事還是很得意。每天清晨碼頭魚市開張，魚販的吆喝聲兩千六百年沒停過。說到魚就得說<Wiki href="https://zh.wikipedia.org/wiki/马赛鱼汤">馬賽魚湯</Wiki>（Bouillabaisse）：它原本是漁夫把賣剩雜魚煮一鍋的「窮人料理」，如今身價翻漲成名菜——記得照我們的防雷指南，選要預訂的老店，配大蒜蛋黃醬 Rouille 抹麵包，這才是正宗吃法。🐟</>},
+      {t:<Wiki href="https://zh.wikipedia.org/wiki/守护圣母圣殿">守護聖母聖殿</Wiki>, d:<>山頂那尊 11 公尺高的鍍金聖母，馬賽人親暱地喊她「好媽媽（La Bonne Mère）」——水手出海前拜她，馬賽足球隊踢歐冠也拜她，堪稱全城最忙的守護者。教堂裡掛滿還願的船模型和感謝牌，每一塊都是一個海上歸來的故事。爬上來雖累，但 360 度港灣全景會讓你覺得值回票價。</>},
+      {t:<><Wiki href="https://zh.wikipedia.org/wiki/卡朗格国家公园">卡朗格峽灣國家公園</Wiki>（Calanques de Cassis）</>, d:<>白色石灰岩斷崖直插碧藍海水，是地中海版的「峽灣秀」。這片海底還藏著傳奇：科斯凱洞穴入口在水下 37 公尺，裡面竟有兩萬年前的史前壁畫，證明冰河期的老祖宗也住海景第一排。搭遊船別忘了帶外套——南法名產「密斯脫拉風」一吹，夏天也會冷得你想念羽絨衣；當地人說這風「能吹走一切，除了<Wiki href="https://zh.wikipedia.org/wiki/卡西斯">卡西斯</Wiki>的美」。⛵</>},
+    ],
+    notes:[
+      {title:"💨 卡西斯遊船變數", body:<>若遇上強勁的南法「密斯脫拉風」，海面風浪過大，當天的峽灣遊船可能會隨時無預警停駛。</>},
+      {title:"🐟 馬賽魚湯防雷指南", body:<>絕對不要在舊港碼頭正對面的觀光味重鎮盲選（高機率吃到冷凍魚碎肉且又貴又鹹）。正宗<Wiki href="https://zh.wikipedia.org/wiki/马赛鱼汤">馬賽魚湯</Wiki>極其講究鮮魚與大蒜蛋黃醬（Rouille）的搭配，建議挑選需要提前預訂的在地百年老店（如 Le Rhul 或 Chez Fonfon）。</>},
+    ],
+  },
+  {
+    id:"d0719", date:"7/19", wd:"日", num:"VIII", tag:"第八天", title:"解散日・互道珍重",
+    img:null,
+    gallery:[
+      {src:"https://commons.wikimedia.org/wiki/Special:FilePath/2016%20Views%20of%20Marseille%20from%20Notre-Dame%20de%20la%20Garde%2003.jpg?width=900", page:"https://commons.wikimedia.org/wiki/File:2016%20Views%20of%20Marseille%20from%20Notre-Dame%20de%20la%20Garde%2003.jpg", cap:"再見馬賽・互道珍重"},
+    ],
+    attendees:<AvatarStack label="全員 8 人" names={ALL8}/>,
+    transport:[<>搭乘高鐵 <b>FR 6104</b>，<b>10:11</b> 從 Marseille SC 車站發車</>],
+    body:(
+      <p className="text-sm leading-relaxed"><b>【抵達分流】</b>11:39 抵達 Lyon St Exupéry TGV／13:34 抵達 Paris Gare de Lyon，隨後各自踏上歸途。<b style={{color:"var(--lavender-deep)"}}>互道珍重！Bon voyage！</b></p>
+    ),
+  },
+];
+
+/* ---------------- 每日卡片 ---------------- */
+const DayCard = ({d, idx}) => (
+  <div id={d.id} className="section-anchor relative pl-12 md:pl-14 pb-10">
+    <span className="milestone" aria-hidden="true">{d.num}</span>
+    <article className="card overflow-hidden fade-in">
+      {d.gallery && <Gallery items={d.gallery}/>}
+      <div className="p-5 md:p-6">
+        <div className="flex flex-wrap items-start justify-between gap-3 mb-3">
+          <div>
+            <div className="flex items-center gap-2 mb-1 flex-wrap">
+              <span className="badge-tag text-white" style={{background:"linear-gradient(135deg,var(--lavender),var(--lavender-deep))"}}>
+                📅 {d.date}（{d.wd}）
+              </span>
+              <span className="badge-tag" style={{background:"var(--ochre-mist)", color:"var(--ochre-deep)"}}>{d.tag}</span>
+            </div>
+            <h3 className="font-serif-tc font-bold text-lg md:text-xl" style={{color:"var(--ink)"}}>{d.title}</h3>
+          </div>
+          <div className="flex-none">{d.attendees}</div>
+        </div>
+
+        <div className="space-y-3">
+          {d.transport && (
+            <div className="rounded-xl p-3 flex flex-col gap-1" style={{background:"var(--ocean-mist)"}}>
+              <div className="flex items-center gap-2 font-bold text-sm" style={{color:"var(--ocean-deep)"}}>
+                {d.id==="d0716" ? <I.Bus size={17}/> : <I.Train size={17}/>}今日交通
+              </div>
+              {d.transport.map((t,i)=><p key={i} className="text-sm leading-relaxed" style={{color:"var(--ink)"}}>{t}</p>)}
+            </div>
+          )}
+
+          {d.deadline}
+          {d.body}
+
+          {d.hotel && (
+            <Collapse tint="var(--ocean-deep)" icon={<I.Bed size={17}/>}
+              title={<>🏨 飯店住宿憑證資訊 — {d.hotel.name}</>}>
+              <div className="space-y-1.5">
+                <div className="pb-1"><MapBtn href={d.hotel.map}>在 Google Maps 開啟</MapBtn></div>
+                {d.hotel.lines.map((l,i)=><p key={i}>{l}</p>)}
+              </div>
+            </Collapse>
+          )}
+
+          {d.history && (
+            <Collapse tint="var(--lavender-deep)" icon={<I.Landmark size={17}/>} title="🏛️ 歷史背景">
+              {d.history}
+            </Collapse>
+          )}
+
+          {d.spots && (
+            <Collapse tint="var(--ochre-deep)" icon={<I.MapPin size={17}/>} title="📍 核心景點">
+              <ul className="space-y-2">
+                {d.spots.map((s,i)=>(
+                  <li key={i} className="flex gap-2">
+                    <span className="mt-1 flex-none" style={{color:"var(--ochre)"}}>◆</span>
+                    <span><b>{s.t}</b>：{s.d}</span>
+                  </li>
+                ))}
+              </ul>
+            </Collapse>
+          )}
+
+          {d.notes && d.notes.map((n,i)=><NoteBox key={i} title={"專家實戰 Note｜" + n.title}>{n.body}</NoteBox>)}
+        </div>
+      </div>
+    </article>
+  </div>
+);
+
+/* ---------------- Section 3：伴手禮 ---------------- */
+const SOUVENIRS = [
+  {emoji:"🪻", title:"呂貝隆與薰衣草高原", tags:["精油","蜂蜜","香包"],
+   img:"https://upload.wikimedia.org/wikipedia/commons/7/7e/Single_lavender_flower02.jpg",
+   body:"真實薰衣草精油、薰衣草蜂蜜、普羅旺斯草本香包。"},
+  {emoji:"🏛️", title:"古羅馬與藝術之城", tags:["梵谷文創","丹寧"],
+   img:"https://upload.wikimedia.org/wikipedia/commons/8/86/Van_Gogh_-_Terrace_of_a_Caf%C3%A9_at_Night_%28Place_du_Forum%29_1888.jpg",
+   body:"梵谷周邊文創商品、尼姆丹寧布織品（Denim / Toile de Nîmes）。"},
+  {emoji:"🍬", title:"艾克斯與碧泉村", tags:["可利頌糖","羊皮紙"],
+   img:"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Calisson.jpg/1920px-Calisson.jpg",
+   body:"艾克斯可利頌糖（Calisson d'Aix）、手工典藏羊皮紙與復古文具。"},
+  {emoji:"🧼", title:"地中海門戶：馬賽", tags:["馬賽皂 72%","Pastis"],
+   img:"https://upload.wikimedia.org/wikipedia/commons/4/4a/Savons_de_Marseille.jpg",
+   body:(<>正宗<Wiki href="https://zh.wikipedia.org/wiki/马赛皂">馬賽皂</Wiki>（Savon de Marseille 72%）、<Wiki href="https://zh.wikipedia.org/wiki/茴香酒">茴香酒</Wiki>（Pastis）。</>)},
+];
+
+const SouvenirSection = () => (
+  <section id="souvenirs" className="section-anchor">
+    <SectionTitle icon={<I.Bag size={20}/>} eyebrow="SECTION 3 · SOUVENIRS"
+      title="南法在地伴手禮與必買紀念品" sub="把普羅旺斯的陽光與香氣帶回家"/>
+    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+      {SOUVENIRS.map((s,i)=>(
+        <div key={i} className="card overflow-hidden flex flex-col">
+          <div className="relative h-32 overflow-hidden">
+            <div className="absolute inset-0 stone-texture" style={{background:"linear-gradient(135deg,var(--ocean) 0%,var(--lavender) 60%,var(--ochre) 120%)"}}/>
+            {s.img && <img src={s.img} alt={s.title} loading="lazy" className="absolute inset-0 w-full h-full object-cover" onError={(e)=>{e.currentTarget.style.display="none";}}/>}
+            <span className="absolute top-2 left-2 text-2xl drop-shadow">{s.emoji}</span>
+          </div>
+          <div className="p-4 flex flex-col gap-2 flex-1">
+            <div className="font-serif-tc font-bold" style={{color:"var(--lavender-deep)"}}>{s.title}</div>
+            <div className="flex flex-wrap gap-1">
+              {s.tags.map(t=>(
+                <span key={t} className="badge-tag" style={{background:"var(--lavender-mist)", color:"var(--lavender-deep)"}}>{t}</span>
+              ))}
+            </div>
+            <p className="text-sm leading-relaxed" style={{color:"var(--ink)"}}>{s.body}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+);
+
+/* ---------------- 版面共用 ---------------- */
+const SectionTitle = ({icon, eyebrow, title, sub}) => (
+  <header className="mb-6">
+    <div className="flex items-center gap-2 text-xs font-bold tracking-widest mb-1 font-display" style={{color:"var(--ochre-deep)"}}>
+      {icon}<span>{eyebrow}</span>
+    </div>
+    <h2 className="font-serif-tc font-bold text-2xl md:text-3xl" style={{color:"var(--lavender-deep)"}}>{title}</h2>
+    {sub && <p className="text-sm mt-1" style={{color:"var(--stone)"}}>{sub}</p>}
+  </header>
+);
+
+const NAV = [
+  {href:"#top", label:"首頁"},
+  {href:"#packing", label:"行前裝備"},
+  ...DAYS.map(d=>({href:"#"+d.id, label:d.date})),
+  {href:"#souvenirs", label:"伴手禮"},
+];
+
+const Sidebar = () => (
+  <aside className="hidden lg:flex flex-col fixed left-0 top-0 bottom-0 w-52 p-6 gap-1 overflow-y-auto scrollbar-none"
+         style={{background:"linear-gradient(180deg,#FFFFFF, var(--lavender-mist))", borderRight:"1px solid rgba(94,78,150,.12)"}}>
+    <a href="#top" className="font-display text-xl mb-1" style={{color:"var(--lavender-deep)"}}>PROVENCE</a>
+    <div className="text-xs mb-4 font-bold tracking-widest" style={{color:"var(--ochre-deep)"}}>ÉTÉ 2026 · 7/11–7/19</div>
+    {NAV.map(n=>(
+      <a key={n.href} href={n.href} className="chip"
+         style={{color:"var(--lavender-deep)"}}
+         onMouseEnter={e=>{e.currentTarget.style.background="var(--lavender-mist)";}}
+         onMouseLeave={e=>{e.currentTarget.style.background="transparent";}}>
+        {n.label}
+      </a>
+    ))}
+    <div className="mt-auto pt-4 text-xs" style={{color:"var(--stone)"}}>☀️ 陽光・薰衣草・地中海</div>
+  </aside>
+);
+
+const MobileNav = () => (
+  <nav className="lg:hidden sticky top-0 z-40 backdrop-filter" style={{background:"rgba(250,250,250,.92)", backdropFilter:"blur(8px)", borderBottom:"1px solid rgba(94,78,150,.12)"}}>
+    <div className="flex gap-1 overflow-x-auto px-3 py-2 scrollbar-none">
+      {NAV.map(n=>(
+        <a key={n.href} href={n.href} className="chip flex-none"
+           style={{background:"var(--lavender-mist)", color:"var(--lavender-deep)"}}>{n.label}</a>
+      ))}
+    </div>
+  </nav>
+);
+
+const Hero = () => (
+  <header id="top" className="section-anchor hero-sky stone-texture relative overflow-hidden text-white">
+    <div className="max-w-4xl mx-auto px-5 pt-16 pb-14 md:pt-24 md:pb-20 relative">
+      <div className="absolute right-6 top-8 opacity-80" style={{color:"#FFE3A8"}} aria-hidden="true"><I.Sun size={72}/></div>
+      <div className="font-display tracking-widest text-sm mb-3" style={{color:"#FFE3A8"}}>PROVENCE · CÔTE D'AZUR · ÉTÉ 2026</div>
+      <h1 className="font-serif-tc font-bold text-3xl md:text-5xl leading-tight mb-4" style={{textShadow:"0 3px 18px rgba(45,42,51,.35)"}}>
+        ☀️ 2026 南法盛夏之旅<br/>
+        <span className="text-xl md:text-3xl font-normal opacity-95">古羅馬、薰衣草與地中海風情全攻略</span>
+      </h1>
+      <p className="max-w-xl text-sm md:text-base leading-relaxed opacity-90 mb-6">
+        7/11 – 7/19・里昂 → 亞爾 → 普羅旺斯山城花海 → 亞維儂 → 馬賽。八位旅伴、一路向南，追著陽光與薰衣草的方向。
+      </p>
+      <div className="flex items-center gap-3 flex-wrap">
+        <div className="flex avatar-stack">{MEMBERS.map(n=><Avatar key={n} name={n}/>)}</div>
+        <span className="badge-tag" style={{background:"rgba(255,255,255,.18)", color:"#fff"}}><I.Users size={13}/> 全團 8 人</span>
+      </div>
+    </div>
+  </header>
+);
+
+const App = () => (
+  <div>
+    <Sidebar/>
+    <div className="lg:ml-52">
+      <MobileNav/>
+      <Hero/>
+      <main className="max-w-4xl mx-auto px-4 md:px-6 py-10 space-y-14">
+        <PackingSection/>
+        <section id="schedule" className="section-anchor">
+          <SectionTitle icon={<I.Clock size={20}/>} eyebrow="SECTION 2 · ITINERARY"
+            title="每日詳細行程與歷史景點深度指南"
+            sub="點擊各卡片中的「歷史背景／核心景點／飯店資訊」可展開閱讀；卡片右上角為當日出席團員。"/>
+          <div className="relative">
+            <div className="timeline-line" aria-hidden="true"></div>
+            {DAYS.map((d,i)=><DayCard key={d.id} d={d} idx={i}/>)}
+          </div>
+        </section>
+        <SouvenirSection/>
+      </main>
+      <footer className="text-center text-sm py-10" style={{color:"var(--stone)"}}>
+        <div className="font-display tracking-widest mb-1" style={{color:"var(--lavender-deep)"}}>BON VOYAGE EN PROVENCE</div>
+        2026 南法盛夏之旅・文安、思賢、皓哲、子豪、國廷、忻叡、韋菖、政倫
+        <div className="text-xs mt-2 opacity-80">行程配圖來源：Wikimedia Commons（CC BY / CC BY-SA 等自由授權）・點擊各圖片可查看原始出處與作者</div>
+      </footer>
+    </div>
+  </div>
+);
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
+</script>
+</body>
+</html>
