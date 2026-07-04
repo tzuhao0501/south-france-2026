@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>☀️ 2026 南法盛夏之旅：古羅馬、薰衣草與地中海風情全攻略</title>
+<title>🏛️ 夢回羅馬小鎮 — 2026 南法盛夏之旅：古羅馬、薰衣草與地中海風情全攻略</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Serif+TC:wght@600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -55,9 +55,10 @@
     .chev{transition:none}
   }
   .hero-sky{background:
-    radial-gradient(1100px 480px at 82% -10%, rgba(229,169,60,.55), transparent 60%),
-    radial-gradient(900px 520px at -10% 20%, rgba(42,123,155,.45), transparent 60%),
-    linear-gradient(160deg,#5F4E96 0%,#8E7CC3 45%,#B49BD6 72%,#E5A93C 130%)}
+    radial-gradient(1100px 480px at 82% -10%, rgba(229,169,60,.42), transparent 60%),
+    radial-gradient(900px 520px at -10% 20%, rgba(42,123,155,.40), transparent 60%),
+    linear-gradient(160deg,#4A3C7A 0%,#5F4E96 40%,#7A66B0 68%,#B97F1D 135%)}
+  .hero-sky::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(45,42,51,.18) 0%,rgba(45,42,51,.30) 100%);pointer-events:none}
   .stone-texture{background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 2px,transparent 2px 26px),repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 2px,transparent 2px 52px)}
   .check-card input[type=checkbox]{width:1.25rem;height:1.25rem;accent-color:var(--lavender-deep);cursor:pointer}
   .check-card.done{border-color:rgba(142,124,195,.6);background:var(--lavender-mist)}
@@ -638,14 +639,15 @@ const MobileNav = () => (
 
 const Hero = () => (
   <header id="top" className="section-anchor hero-sky stone-texture relative overflow-hidden text-white">
-    <div className="max-w-4xl mx-auto px-5 pt-16 pb-14 md:pt-24 md:pb-20 relative">
+    <div className="max-w-4xl mx-auto px-5 pt-16 pb-14 md:pt-24 md:pb-20 relative" style={{zIndex:1}}>
       <div className="absolute right-6 top-8 opacity-80" style={{color:"#FFE3A8"}} aria-hidden="true"><I.Sun size={72}/></div>
       <div className="font-display tracking-widest text-sm mb-3" style={{color:"#FFE3A8"}}>PROVENCE · CÔTE D'AZUR · ÉTÉ 2026</div>
-      <h1 className="font-serif-tc font-bold text-3xl md:text-5xl leading-tight mb-4" style={{textShadow:"0 3px 18px rgba(45,42,51,.35)"}}>
-        ☀️ 2026 南法盛夏之旅<br/>
-        <span className="text-xl md:text-3xl font-normal opacity-95">古羅馬、薰衣草與地中海風情全攻略</span>
+      <h1 className="font-serif-tc font-bold text-3xl md:text-5xl leading-tight mb-4" style={{textShadow:"0 2px 16px rgba(30,22,55,.75), 0 1px 3px rgba(30,22,55,.9)"}}>
+        🏛️ 夢回羅馬小鎮<br/>
+        <span className="text-2xl md:text-4xl">2026 南法盛夏之旅</span><br/>
+        <span className="text-lg md:text-2xl font-normal">古羅馬、薰衣草與地中海風情全攻略</span>
       </h1>
-      <p className="max-w-xl text-sm md:text-base leading-relaxed opacity-90 mb-6">
+      <p className="max-w-xl text-sm md:text-base leading-relaxed mb-6" style={{color:"#F3EEFB", textShadow:"0 1px 8px rgba(30,22,55,.7)"}}>
         7/11 – 7/19・里昂 → 亞爾 → 普羅旺斯山城花海 → 亞維儂 → 馬賽。八位旅伴、一路向南，追著陽光與薰衣草的方向。
       </p>
       <div className="flex items-center gap-3 flex-wrap">
